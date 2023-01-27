@@ -3,7 +3,7 @@ import { BrowserRouter, Routes, Route } from "react-router-dom";
 import { FiSettings } from "react-icons/fi";
 import { TooltipComponent } from "@syncfusion/ej2-react-popups";
 
-import { Navbar, footer, Sidebar, ThemeSetting } from "./components";
+import { Navbar, footer, Sidebar, ThemeSettings } from "./components";
 import {
   Ecommerce,
   Orders,
@@ -59,7 +59,8 @@ const App = () => {
               <Navbar />
             </div>
 
-            <div className="">
+            <div>
+              <ThemeSettings />
               <Routes>
                 {/* Dashboard */}
                 <Route path="/" element={<Ecommerce />} />
